@@ -1,0 +1,136 @@
+section>div {
+	/*border: 1px solid rosybrown;*/
+	display: inline-block;
+	margin: 10px;
+	width: 200px;
+	height: 200px;
+}
+
+.transparent_border {
+	background: yellowgreen;
+	box-shadow: 0 0 0 10px #655, 0 0 0 15px deeppink, 0 2px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+.transparent_border_outline {
+	background: yellowgreen;
+	border: 10px solid #665555;
+	outline: 5px solid deeppink;
+}
+
+.background-origin {
+	background: url(../img/iconfont-riyongbaihuo.svg) no-repeat #58a;
+	background-size: 50px;
+	background-position: right 20px bottom 10px;
+	/*background-position: calc(100% - 20px) calc(100% - 10px);*/
+	/* 第二种方案 */
+	/*
+	 * padding: 10px;
+	 * background-position: content-box;
+	 * 第三种方案
+	 * 
+	 * */
+}
+
+.border-inside-radius {
+	background: tan;
+	border-radius: .8em;
+	box-shadow: 0 0 0 .6em #655;
+	outline: .6em solid #665555;
+}
+
+.stripe-background1 {
+	background: linear-gradient(#fb3 20%, #58a 80%);
+}
+
+.stripe-background2 {
+	background: linear-gradient(#fb3 50%, #58a 50%);
+}
+
+.stripe-background3 {
+	background: linear-gradient(#fb3 50%, #58a 50%);
+	background-size: 100% 30px;
+	background-repeat: no-repeat;
+}
+
+.stripe-background4 {
+	background: linear-gradient(#fb3 50%, #58a 50%);
+	background-size: 100% 30px;
+}
+
+.stripe-background5 {
+	background: linear-gradient(#fb3 30%, #58a 0);
+	background-size: 100% 30px;
+}
+
+.stripe-background6 {
+	background: linear-gradient(#fb3 33.3%, #58a 0, #58a 66.6%, yellowgreen 0);
+	background-size: 100% 45px;
+}
+
+.stripe-background7 {
+	background: linear-gradient(to right, #fb3 50%, #58a 0);
+	background-size: 30px 100%;
+}
+
+.stripe-background8 {
+	background: linear-gradient(45deg, #fb3 50%, #58a 0);
+	background-size: 30px 30px;
+}
+
+.stripe-background9 {
+	background: linear-gradient(45deg, #fb3 25%, #58a 0, #58a 50%, #fb3 0, #fb3 75%, #58a 0);
+	background-size: 30px 30px;
+}
+
+.stripe-background10 {
+	background: linear-gradient(45deg, #fb3 25%, #58a 0, #58a 50%, #fb3 0, #fb3 75%, #58a 0);
+	background-size: 42.426406871px 42.426406871px;
+	/* 如果想让条纹的宽度变化为15px, background-size的长度为 2*15*gen2 */
+}
+
+.stripe-background11 {
+	background: #5588AA;
+	background-image: repeating-linear-gradient(30deg, hsla(0, 0%, 100%, .1), hsla(0, 0%, 100%, .1) 15px, transparent 0, transparent 30px);
+}
+
+.stripe-background12 {
+	background: #58a;
+	background-image: linear-gradient(white 1px, transparent 0), linear-gradient(90deg, white 1px, transparent 0);
+	background-size: 30px 30px;
+}
+
+.stripe-background13 {
+	background: #58a;
+	background-image: linear-gradient(white 2px, transparent 0), 
+	linear-gradient(90deg, white 2px, transparent 0),
+	linear-gradient(hsla(0,0%,100%,.3) 1px,transparent 0),
+	linear-gradient(90deg, hsla(0,0%,100%,.3) 1px,transparent 0);
+	background-size: 75px 75px,
+		75px 75px,
+		15px 15px, 
+		15px 15px;
+}
+.stripe-background14 {
+	background: #655;
+	background-image: radial-gradient(tan 30%, transparent 0);
+	background-size: 30px 30px;
+}
+.stripe-background15 {
+	background: #655;
+	background-image: radial-gradient(tan 30%, transparent 0), 
+		radial-gradient(tan 30%, transparent 0);
+	background-size: 30px 30px;
+	background-position: 0 0, 15px 15px;
+}
+.stripe-background16 {
+	background: #eee;
+	background-image: linear-gradient(45deg, #bbb 50%, transparent 0);
+	background-size: 30px 30px;
+}
+.stripe-background17 {
+	background: #655;
+	background-image: radial-gradient(tan 30%, transparent 0), 
+		radial-gradient(tan 30%, transparent 0);
+	background-size: 30px 30px;
+	background-position: 0 0, 15px 15px;
+}
