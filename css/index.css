@@ -4,7 +4,13 @@ section>div {
 	margin: 10px;
 	width: 200px;
 	height: 200px;
+	vertical-align: middle;
 }
+
+/*img {
+	width: 100%;
+	height: 100%;
+}*/
 
 .transparent_border {
 	background: yellowgreen;
@@ -133,4 +139,113 @@ section>div {
 		radial-gradient(tan 30%, transparent 0);
 	background-size: 30px 30px;
 	background-position: 0 0, 15px 15px;
+}
+
+.pseudo-random-background {
+	background: hsl(20, 40%, 90%);
+	background-image: linear-gradient(90deg, #fb3 11px, transparent 0),
+	                  linear-gradient(90deg, #ab4 23px, transparent 0),
+	                  linear-gradient(90deg, #655 41px, transparent 0);
+	background-size: 41px 100%, 61px 100%, 83px 100%;
+}
+
+.adaptive-ellipse {
+	background: darkcyan;
+	border-radius: 50%;
+}
+
+.adaptive-ellipse1 {
+	background: darkcyan;
+	border-radius: 50% / 100% 100% 0 0;
+}
+
+.adaptive-ellipse2 {
+	background: darkcyan;
+	border-radius: 100% 0 0 100% / 50%;
+}
+
+.adaptive-ellipse3 {
+	background: darkcyan;
+	border-radius: 100% 0 0 0;
+}
+
+.rectangle {
+	background: salmon;
+	transform: skewX(-5deg);
+}
+
+.rectangle1 {
+	background: salmon;
+	margin-left: 100px;
+	transform: skewX(-45deg);
+}
+
+.rectangle1>span {
+	display: inline-block;
+	/* 这里必须要改变盒子模型， */
+	transform: skewX(45deg);
+}
+
+.rectangle2 {
+	position: relative;
+	left: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 200px;
+	height: 200px;
+	color: white;
+}
+
+.rectangle2::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+	background: crimson;
+	transform: skewX(-45deg);
+}
+
+.diamond {
+	transform: rotate(45deg);
+	overflow: hidden;
+	margin-top: 111px;
+}
+
+.diamond > img {
+	max-width: 100%;
+	transform: rotate(-45deg) scale(1.42);
+	position: relative;
+	left: 50px;
+	top: -20px;
+}
+
+.diamond1 {
+	margin-left: 50px;
+}
+
+.diamond1 > img {
+	width: 100%;
+	clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+	transition: 1s clip-path;
+}
+
+.diamond1 > img:hover {
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.corner-cut {
+	background: linear-gradient(-45deg, transparent 15px, #58a 0);
+}
+
+.corner-cut1 {
+	background: linear-gradient(135deg, transparent 15px, #58a 0) top left,
+	    linear-gradient(-135deg, transparent 15px, #58a 0) top right,
+	    linear-gradient(-45deg, transparent 15px, #58a 0) bottom right,
+	    linear-gradient(45deg, transparent 15px, #58a 0) bottom left;
+	background-size: 50% 50%;
+	background-repeat: no-repeat;
 }
