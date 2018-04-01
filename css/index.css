@@ -249,3 +249,20 @@ section>div {
 	background-size: 50% 50%;
 	background-repeat: no-repeat;
 }
+
+.corner-cut2 {
+	background: radial-gradient(circle at top left, transparent 15px, #58a 0) top left,
+	    radial-gradient(circle at top right, transparent 15px, #58a 0) top right,
+	    radial-gradient(circle at bottom right, transparent 15px, #58a 0) bottom right,
+	    radial-gradient(circle at bottom left, transparent 15px, #58a 0) bottom left;
+	background-size: 50% 50%;
+	background-repeat: no-repeat;
+}
+
+.corner-cut3 {
+	background: url(http://i1.17173cdn.com/2fhnvk/YWxqaGBf/cms3/ISLkfwbljonlDBg.jpg);
+	background-size: 100%;
+	clip-path: polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 
+		100% calc(100% - 20px), calc(100% - 20px) 100%, 
+		20px 100%, 0 calc(100% - 20px), 0 20px );
+}
