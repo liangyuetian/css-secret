@@ -266,3 +266,150 @@ section>div {
 		100% calc(100% - 20px), calc(100% - 20px) 100%, 
 		20px 100%, 0 calc(100% - 20px), 0 20px );
 }
+
+.pie-chart1 {
+	border: 1px solid burlywood;
+	border-radius: 50%;
+	background: springgreen;
+	background-image: linear-gradient(to right, transparent 50%, #655 0);
+}
+
+.pie-chart2 {
+	border: 1px solid burlywood;
+	border-radius: 50%;
+	background: springgreen;
+	background-image: linear-gradient(to right, transparent 50%, #655 0);
+}
+
+.pie-chart2::before {
+	content: "";
+	display: block;
+	margin-left: 50%;
+	height: 100%;
+	border-radius: 0 100% 100% 0 / 0%;
+	background-color: inherit;
+	transform-origin: left;
+}
+
+.pie-chart3 {
+	border: 1px solid burlywood;
+	border-radius: 50%;
+	background: springgreen;
+	background-image: linear-gradient(to right, transparent 50%, #655 0);
+	overflow: hidden;
+}
+
+@keyframes spin {
+	to {
+		transform: rotate(.5turn);
+	}
+}
+
+@keyframes bg {
+	50% {
+		background: #655;
+	}
+}
+
+.pie-chart3::before {
+	content: "";
+	display: block;
+	margin-left: 50%;
+	height: 100%;
+	border-radius: 0 100% 100% 0 / 0%;
+	background-color: inherit;
+	transform-origin: left;
+	transform: rotate(.1turn);
+	animation: spin 2s linear infinite, bg 6s step-end infinite;
+	animation-play-state: paused;
+	animation-delay: inherit; 
+}
+
+.pie-chart4 svg {
+	width: 100px;
+	height: 100px;
+	transform: rotate(-90deg);
+	background: yellowgreen;
+	border-radius: 50%;
+}
+
+.pie-chart4 circle {
+	fill: yellowgreen;
+	stroke: #655;
+	stroke-width: 32;
+	stroke-dasharray: 38 100;
+}
+
+.unilateral-shadow {
+	background: salmon;
+	box-shadow: 2px 3px 4px black;
+}
+
+.unilateral-shadow1 {
+	background: salmon;
+	box-shadow: 0 5px 4px -4px black;
+}
+
+.unilateral-shadow2 {
+	background: salmon;
+	box-shadow: 3px 5px 4px -4px black;
+}
+
+.unilateral-shadow3 {
+	background: salmon;
+	box-shadow: 5px 0 5px -5px black, -5px 0 5px -5px black;
+}
+
+.irregular-shadow {
+	position: relative;
+	position: relative;
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: center;
+	vertical-align: bottom;
+		box-sizing: border-box;
+	width: 5.9em;
+	height: 5.2em;
+	margin: .6em;
+	background: #fb3;
+	box-shadow: .1em .1em .3em rgba(0,0,0,.5);
+	-webkit-filter: drop-shadow(.1em .1em .1em rgba(0,0,0,.5));
+	filter: drop-shadow(.1em .1em .1em rgba(0,0,0,.5));
+	font: 200%/1.6 Baskerville, Palatino, serif;
+	text-align: center;
+}
+
+.irregular-shadow::before {
+	content: '';
+    position: absolute;
+    top: 1em;
+    right: -.7em;
+    width: 0;
+    height: 0;
+    border: 1em solid transparent;
+	border-right-width: 1em;
+	border-left-color: transparent;
+    border-left-color: #fb3;
+    border-right-width: 0;
+}
+
+.irregular-shadow1 {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: bottom;
+    box-sizing: border-box;
+    width: 5.9em;
+    height: 5.2em;
+    margin: .6em;
+    background: #fb3;
+    background-clip: border-box;
+    box-shadow: .1em .1em .3em rgba(0,0,0,.5);
+    -webkit-filter: drop-shadow(.1em .1em .1em rgba(0,0,0,.5));
+    filter: drop-shadow(.1em .1em .1em rgba(0,0,0,.5));
+    font: 200%/1.6 Baskerville, Palatino, serif;
+    text-align: center;
+    background-clip: padding-box;
+    /* http://play.csssecrets.io/drop-shadow */
+}
