@@ -3,14 +3,13 @@ section>div {
 	display: inline-block;
 	margin: 10px;
 	width: 200px;
-	height: 200px;
+	min-height: 200px;
 	vertical-align: middle;
 }
 
-/*img {
+img {
 	width: 100%;
-	height: 100%;
-}*/
+}
 
 .transparent_border {
 	background: yellowgreen;
@@ -412,4 +411,51 @@ section>div {
     text-align: center;
     background-clip: padding-box;
     /* http://play.csssecrets.io/drop-shadow */
+}
+
+.filter-shadow img {
+	transition: 0.5s filter;
+	filter: sepia(1) saturate(4) hue-rotate(295deg);
+	
+}
+
+.filter-shadow img:hover,.filter-shadow img:focus {
+	filter: none;
+	
+}
+
+.filter-shadow1 {
+	background: hsl(335, 100%, 50%);
+}
+
+.filter-shadow1 img {
+	transition: 0.5s filter;
+	mix-blend-mode: luminosity;
+	
+	/*mix-blend-mode: normal;          //正常
+	mix-blend-mode: multiply;        //正片叠底
+	mix-blend-mode: screen;          //滤色
+	mix-blend-mode: overlay;         //叠加
+	mix-blend-mode: darken;          //变暗
+	mix-blend-mode: lighten;         //变亮
+	mix-blend-mode: color-dodge;     //颜色减淡
+	mix-blend-mode: color-burn;      //颜色加深
+	mix-blend-mode: hard-light;      //强光
+	mix-blend-mode: soft-light;      //柔光
+	mix-blend-mode: difference;      //差值
+	mix-blend-mode: exclusion;       //排除
+	mix-blend-mode: hue;             //色相
+	mix-blend-mode: saturation;      //饱和度
+	mix-blend-mode: color;           //颜色
+	mix-blend-mode: luminosity;      //亮度
+	
+	mix-blend-mode: initial;         //初始
+	mix-blend-mode: inherit;         //继承
+	mix-blend-mode: unset;           //复原*/
+	
+}
+
+.filter-shadow1 img:hover,.filter-shadow img:focus {
+	filter: none;
+	
 }
