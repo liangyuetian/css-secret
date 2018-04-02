@@ -1,34 +1,34 @@
 section>div {
-	/*border: 1px solid rosybrown;*/
-	display: inline-block;
-	margin: 10px;
-	width: 200px;
-	min-height: 200px;
-	vertical-align: middle;
+    /*border: 1px solid rosybrown;*/
+    display: inline-block;
+    margin: 10px;
+    width: 200px;
+    min-height: 200px;
+    vertical-align: middle;
 }
 
 img {
-	width: 100%;
+    width: 100%;
 }
 
 .transparent_border {
-	background: yellowgreen;
-	box-shadow: 0 0 0 10px #655, 0 0 0 15px deeppink, 0 2px 5px 15px rgba(0, 0, 0, 0.6);
+    background: yellowgreen;
+    box-shadow: 0 0 0 10px #655, 0 0 0 15px deeppink, 0 2px 5px 15px rgba(0, 0, 0, 0.6);
 }
 
 .transparent_border_outline {
-	background: yellowgreen;
-	border: 10px solid #665555;
-	outline: 5px solid deeppink;
+    background: yellowgreen;
+    border: 10px solid #665555;
+    outline: 5px solid deeppink;
 }
 
 .background-origin {
-	background: url(../img/iconfont-riyongbaihuo.svg) no-repeat #58a;
-	background-size: 50px;
-	background-position: right 20px bottom 10px;
-	/*background-position: calc(100% - 20px) calc(100% - 10px);*/
-	/* 第二种方案 */
-	/*
+    background: url(../img/iconfont-riyongbaihuo.svg) no-repeat #58a;
+    background-size: 50px;
+    background-position: right 20px bottom 10px;
+    /*background-position: calc(100% - 20px) calc(100% - 10px);*/
+    /* 第二种方案 */
+    /*
 	 * padding: 10px;
 	 * background-position: content-box;
 	 * 第三种方案
@@ -37,357 +37,343 @@ img {
 }
 
 .border-inside-radius {
-	background: tan;
-	border-radius: .8em;
-	box-shadow: 0 0 0 .6em #655;
-	outline: .6em solid #665555;
+    background: tan;
+    border-radius: .8em;
+    box-shadow: 0 0 0 .6em #655;
+    outline: .6em solid #665555;
 }
 
 .stripe-background1 {
-	background: linear-gradient(#fb3 20%, #58a 80%);
+    background: linear-gradient(#fb3 20%, #58a 80%);
 }
 
 .stripe-background2 {
-	background: linear-gradient(#fb3 50%, #58a 50%);
+    background: linear-gradient(#fb3 50%, #58a 50%);
 }
 
 .stripe-background3 {
-	background: linear-gradient(#fb3 50%, #58a 50%);
-	background-size: 100% 30px;
-	background-repeat: no-repeat;
+    background: linear-gradient(#fb3 50%, #58a 50%);
+    background-size: 100% 30px;
+    background-repeat: no-repeat;
 }
 
 .stripe-background4 {
-	background: linear-gradient(#fb3 50%, #58a 50%);
-	background-size: 100% 30px;
+    background: linear-gradient(#fb3 50%, #58a 50%);
+    background-size: 100% 30px;
 }
 
 .stripe-background5 {
-	background: linear-gradient(#fb3 30%, #58a 0);
-	background-size: 100% 30px;
+    background: linear-gradient(#fb3 30%, #58a 0);
+    background-size: 100% 30px;
 }
 
 .stripe-background6 {
-	background: linear-gradient(#fb3 33.3%, #58a 0, #58a 66.6%, yellowgreen 0);
-	background-size: 100% 45px;
+    background: linear-gradient(#fb3 33.3%, #58a 0, #58a 66.6%, yellowgreen 0);
+    background-size: 100% 45px;
 }
 
 .stripe-background7 {
-	background: linear-gradient(to right, #fb3 50%, #58a 0);
-	background-size: 30px 100%;
+    background: linear-gradient(to right, #fb3 50%, #58a 0);
+    background-size: 30px 100%;
 }
 
 .stripe-background8 {
-	background: linear-gradient(45deg, #fb3 50%, #58a 0);
-	background-size: 30px 30px;
+    background: linear-gradient(45deg, #fb3 50%, #58a 0);
+    background-size: 30px 30px;
 }
 
 .stripe-background9 {
-	background: linear-gradient(45deg, #fb3 25%, #58a 0, #58a 50%, #fb3 0, #fb3 75%, #58a 0);
-	background-size: 30px 30px;
+    background: linear-gradient(45deg, #fb3 25%, #58a 0, #58a 50%, #fb3 0, #fb3 75%, #58a 0);
+    background-size: 30px 30px;
 }
 
 .stripe-background10 {
-	background: linear-gradient(45deg, #fb3 25%, #58a 0, #58a 50%, #fb3 0, #fb3 75%, #58a 0);
-	background-size: 42.426406871px 42.426406871px;
-	/* 如果想让条纹的宽度变化为15px, background-size的长度为 2*15*gen2 */
+    background: linear-gradient(45deg, #fb3 25%, #58a 0, #58a 50%, #fb3 0, #fb3 75%, #58a 0);
+    background-size: 42.426406871px 42.426406871px;
+    /* 如果想让条纹的宽度变化为15px, background-size的长度为 2*15*gen2 */
 }
 
 .stripe-background11 {
-	background: #5588AA;
-	background-image: repeating-linear-gradient(30deg, hsla(0, 0%, 100%, .1), hsla(0, 0%, 100%, .1) 15px, transparent 0, transparent 30px);
+    background: #5588AA;
+    background-image: repeating-linear-gradient(30deg, hsla(0, 0%, 100%, .1), hsla(0, 0%, 100%, .1) 15px, transparent 0, transparent 30px);
 }
 
 .stripe-background12 {
-	background: #58a;
-	background-image: linear-gradient(white 1px, transparent 0), linear-gradient(90deg, white 1px, transparent 0);
-	background-size: 30px 30px;
+    background: #58a;
+    background-image: linear-gradient(white 1px, transparent 0), linear-gradient(90deg, white 1px, transparent 0);
+    background-size: 30px 30px;
 }
 
 .stripe-background13 {
-	background: #58a;
-	background-image: linear-gradient(white 2px, transparent 0), 
-	linear-gradient(90deg, white 2px, transparent 0),
-	linear-gradient(hsla(0,0%,100%,.3) 1px,transparent 0),
-	linear-gradient(90deg, hsla(0,0%,100%,.3) 1px,transparent 0);
-	background-size: 75px 75px,
-		75px 75px,
-		15px 15px, 
-		15px 15px;
+    background: #58a;
+    background-image: linear-gradient(white 2px, transparent 0), linear-gradient(90deg, white 2px, transparent 0), linear-gradient(hsla(0, 0%, 100%, .3) 1px, transparent 0), linear-gradient(90deg, hsla(0, 0%, 100%, .3) 1px, transparent 0);
+    background-size: 75px 75px, 75px 75px, 15px 15px, 15px 15px;
 }
+
 .stripe-background14 {
-	background: #655;
-	background-image: radial-gradient(tan 30%, transparent 0);
-	background-size: 30px 30px;
+    background: #655;
+    background-image: radial-gradient(tan 30%, transparent 0);
+    background-size: 30px 30px;
 }
+
 .stripe-background15 {
-	background: #655;
-	background-image: radial-gradient(tan 30%, transparent 0), 
-		radial-gradient(tan 30%, transparent 0);
-	background-size: 30px 30px;
-	background-position: 0 0, 15px 15px;
+    background: #655;
+    background-image: radial-gradient(tan 30%, transparent 0), radial-gradient(tan 30%, transparent 0);
+    background-size: 30px 30px;
+    background-position: 0 0, 15px 15px;
 }
+
 .stripe-background16 {
-	background: #eee;
-	background-image: linear-gradient(45deg, #bbb 50%, transparent 0);
-	background-size: 30px 30px;
+    background: #eee;
+    background-image: linear-gradient(45deg, #bbb 50%, transparent 0);
+    background-size: 30px 30px;
 }
+
 .stripe-background17 {
-	background: #655;
-	background-image: radial-gradient(tan 30%, transparent 0), 
-		radial-gradient(tan 30%, transparent 0);
-	background-size: 30px 30px;
-	background-position: 0 0, 15px 15px;
+    background: #655;
+    background-image: radial-gradient(tan 30%, transparent 0), radial-gradient(tan 30%, transparent 0);
+    background-size: 30px 30px;
+    background-position: 0 0, 15px 15px;
 }
 
 .pseudo-random-background {
-	background: hsl(20, 40%, 90%);
-	background-image: linear-gradient(90deg, #fb3 11px, transparent 0),
-	                  linear-gradient(90deg, #ab4 23px, transparent 0),
-	                  linear-gradient(90deg, #655 41px, transparent 0);
-	background-size: 41px 100%, 61px 100%, 83px 100%;
+    background: hsl(20, 40%, 90%);
+    background-image: linear-gradient(90deg, #fb3 11px, transparent 0), linear-gradient(90deg, #ab4 23px, transparent 0), linear-gradient(90deg, #655 41px, transparent 0);
+    background-size: 41px 100%, 61px 100%, 83px 100%;
 }
 
 .adaptive-ellipse {
-	background: darkcyan;
-	border-radius: 50%;
+    background: darkcyan;
+    border-radius: 50%;
 }
 
 .adaptive-ellipse1 {
-	background: darkcyan;
-	border-radius: 50% / 100% 100% 0 0;
+    background: darkcyan;
+    border-radius: 50% / 100% 100% 0 0;
 }
 
 .adaptive-ellipse2 {
-	background: darkcyan;
-	border-radius: 100% 0 0 100% / 50%;
+    background: darkcyan;
+    border-radius: 100% 0 0 100% / 50%;
 }
 
 .adaptive-ellipse3 {
-	background: darkcyan;
-	border-radius: 100% 0 0 0;
+    background: darkcyan;
+    border-radius: 100% 0 0 0;
 }
 
 .rectangle {
-	background: salmon;
-	transform: skewX(-5deg);
+    background: salmon;
+    transform: skewX(-5deg);
 }
 
 .rectangle1 {
-	background: salmon;
-	margin-left: 100px;
-	transform: skewX(-45deg);
+    background: salmon;
+    margin-left: 100px;
+    transform: skewX(-45deg);
 }
 
 .rectangle1>span {
-	display: inline-block;
-	/* 这里必须要改变盒子模型， */
-	transform: skewX(45deg);
+    display: inline-block;
+    /* 这里必须要改变盒子模型， */
+    transform: skewX(45deg);
 }
 
 .rectangle2 {
-	position: relative;
-	left: 200px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 200px;
-	height: 200px;
-	color: white;
+    position: relative;
+    left: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    color: white;
 }
 
 .rectangle2::before {
-	content: "";
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	z-index: -1;
-	background: crimson;
-	transform: skewX(-45deg);
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background: crimson;
+    transform: skewX(-45deg);
 }
 
 .diamond {
-	transform: rotate(45deg);
-	overflow: hidden;
-	margin-top: 111px;
+    transform: rotate(45deg);
+    overflow: hidden;
+    margin-top: 111px;
 }
 
-.diamond > img {
-	max-width: 100%;
-	transform: rotate(-45deg) scale(1.42);
-	position: relative;
-	left: 50px;
-	top: -20px;
+.diamond>img {
+    max-width: 100%;
+    transform: rotate(-45deg) scale(1.42);
+    position: relative;
+    left: 50px;
+    top: -20px;
 }
 
 .diamond1 {
-	margin-left: 50px;
+    margin-left: 50px;
 }
 
-.diamond1 > img {
-	width: 100%;
-	clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
-	transition: 1s clip-path;
+.diamond1>img {
+    width: 100%;
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+    transition: 1s clip-path;
 }
 
-.diamond1 > img:hover {
-	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+.diamond1>img:hover {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
 .corner-cut {
-	background: linear-gradient(-45deg, transparent 15px, #58a 0);
+    background: linear-gradient(-45deg, transparent 15px, #58a 0);
 }
 
 .corner-cut1 {
-	background: linear-gradient(135deg, transparent 15px, #58a 0) top left,
-	    linear-gradient(-135deg, transparent 15px, #58a 0) top right,
-	    linear-gradient(-45deg, transparent 15px, #58a 0) bottom right,
-	    linear-gradient(45deg, transparent 15px, #58a 0) bottom left;
-	background-size: 50% 50%;
-	background-repeat: no-repeat;
+    background: linear-gradient(135deg, transparent 15px, #58a 0) top left, linear-gradient(-135deg, transparent 15px, #58a 0) top right, linear-gradient(-45deg, transparent 15px, #58a 0) bottom right, linear-gradient(45deg, transparent 15px, #58a 0) bottom left;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
 }
 
 .corner-cut2 {
-	background: radial-gradient(circle at top left, transparent 15px, #58a 0) top left,
-	    radial-gradient(circle at top right, transparent 15px, #58a 0) top right,
-	    radial-gradient(circle at bottom right, transparent 15px, #58a 0) bottom right,
-	    radial-gradient(circle at bottom left, transparent 15px, #58a 0) bottom left;
-	background-size: 50% 50%;
-	background-repeat: no-repeat;
+    background: radial-gradient(circle at top left, transparent 15px, #58a 0) top left, radial-gradient(circle at top right, transparent 15px, #58a 0) top right, radial-gradient(circle at bottom right, transparent 15px, #58a 0) bottom right, radial-gradient(circle at bottom left, transparent 15px, #58a 0) bottom left;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
 }
 
 .corner-cut3 {
-	background: url(http://i1.17173cdn.com/2fhnvk/YWxqaGBf/cms3/ISLkfwbljonlDBg.jpg);
-	background-size: 100%;
-	clip-path: polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 
-		100% calc(100% - 20px), calc(100% - 20px) 100%, 
-		20px 100%, 0 calc(100% - 20px), 0 20px );
+    background: url(http://i1.17173cdn.com/2fhnvk/YWxqaGBf/cms3/ISLkfwbljonlDBg.jpg);
+    background-size: 100%;
+    clip-path: polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 100% calc(100% - 20px), calc(100% - 20px) 100%, 20px 100%, 0 calc(100% - 20px), 0 20px);
 }
 
 .pie-chart1 {
-	border: 1px solid burlywood;
-	border-radius: 50%;
-	background: springgreen;
-	background-image: linear-gradient(to right, transparent 50%, #655 0);
+    border: 1px solid burlywood;
+    border-radius: 50%;
+    background: springgreen;
+    background-image: linear-gradient(to right, transparent 50%, #655 0);
 }
 
 .pie-chart2 {
-	border: 1px solid burlywood;
-	border-radius: 50%;
-	background: springgreen;
-	background-image: linear-gradient(to right, transparent 50%, #655 0);
+    border: 1px solid burlywood;
+    border-radius: 50%;
+    background: springgreen;
+    background-image: linear-gradient(to right, transparent 50%, #655 0);
 }
 
 .pie-chart2::before {
-	content: "";
-	display: block;
-	margin-left: 50%;
-	height: 100%;
-	border-radius: 0 100% 100% 0 / 0%;
-	background-color: inherit;
-	transform-origin: left;
+    content: "";
+    display: block;
+    margin-left: 50%;
+    height: 100%;
+    border-radius: 0 100% 100% 0 / 0%;
+    background-color: inherit;
+    transform-origin: left;
 }
 
 .pie-chart3 {
-	border: 1px solid burlywood;
-	border-radius: 50%;
-	background: springgreen;
-	background-image: linear-gradient(to right, transparent 50%, #655 0);
-	overflow: hidden;
+    border: 1px solid burlywood;
+    border-radius: 50%;
+    background: springgreen;
+    background-image: linear-gradient(to right, transparent 50%, #655 0);
+    overflow: hidden;
 }
 
 @keyframes spin {
-	to {
-		transform: rotate(.5turn);
-	}
+    to {
+        transform: rotate(.5turn);
+    }
 }
 
 @keyframes bg {
-	50% {
-		background: #655;
-	}
+    50% {
+        background: #655;
+    }
 }
 
 .pie-chart3::before {
-	content: "";
-	display: block;
-	margin-left: 50%;
-	height: 100%;
-	border-radius: 0 100% 100% 0 / 0%;
-	background-color: inherit;
-	transform-origin: left;
-	transform: rotate(.1turn);
-	animation: spin 2s linear infinite, bg 6s step-end infinite;
-	animation-play-state: paused;
-	animation-delay: inherit; 
+    content: "";
+    display: block;
+    margin-left: 50%;
+    height: 100%;
+    border-radius: 0 100% 100% 0 / 0%;
+    background-color: inherit;
+    transform-origin: left;
+    transform: rotate(.1turn);
+    animation: spin 2s linear infinite, bg 6s step-end infinite;
+    animation-play-state: paused;
+    animation-delay: inherit;
 }
 
 .pie-chart4 svg {
-	width: 100px;
-	height: 100px;
-	transform: rotate(-90deg);
-	background: yellowgreen;
-	border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    transform: rotate(-90deg);
+    background: yellowgreen;
+    border-radius: 50%;
 }
 
 .pie-chart4 circle {
-	fill: yellowgreen;
-	stroke: #655;
-	stroke-width: 32;
-	stroke-dasharray: 38 100;
+    fill: yellowgreen;
+    stroke: #655;
+    stroke-width: 32;
+    stroke-dasharray: 38 100;
 }
 
 .unilateral-shadow {
-	background: salmon;
-	box-shadow: 2px 3px 4px black;
+    background: salmon;
+    box-shadow: 2px 3px 4px black;
 }
 
 .unilateral-shadow1 {
-	background: salmon;
-	box-shadow: 0 5px 4px -4px black;
+    background: salmon;
+    box-shadow: 0 5px 4px -4px black;
 }
 
 .unilateral-shadow2 {
-	background: salmon;
-	box-shadow: 3px 5px 4px -4px black;
+    background: salmon;
+    box-shadow: 3px 5px 4px -4px black;
 }
 
 .unilateral-shadow3 {
-	background: salmon;
-	box-shadow: 5px 0 5px -5px black, -5px 0 5px -5px black;
+    background: salmon;
+    box-shadow: 5px 0 5px -5px black, -5px 0 5px -5px black;
 }
 
 .irregular-shadow {
-	position: relative;
-	position: relative;
-	display: inline-flex;
-	flex-direction: column;
-	justify-content: center;
-	vertical-align: bottom;
-		box-sizing: border-box;
-	width: 5.9em;
-	height: 5.2em;
-	margin: .6em;
-	background: #fb3;
-	box-shadow: .1em .1em .3em rgba(0,0,0,.5);
-	-webkit-filter: drop-shadow(.1em .1em .1em rgba(0,0,0,.5));
-	filter: drop-shadow(.1em .1em .1em rgba(0,0,0,.5));
-	font: 200%/1.6 Baskerville, Palatino, serif;
-	text-align: center;
+    position: relative;
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: bottom;
+    box-sizing: border-box;
+    width: 5.9em;
+    height: 5.2em;
+    margin: .6em;
+    background: #fb3;
+    box-shadow: .1em .1em .3em rgba(0, 0, 0, .5);
+    -webkit-filter: drop-shadow(.1em .1em .1em rgba(0, 0, 0, .5));
+    filter: drop-shadow(.1em .1em .1em rgba(0, 0, 0, .5));
+    font: 200%/1.6 Baskerville, Palatino, serif;
+    text-align: center;
 }
 
 .irregular-shadow::before {
-	content: '';
+    content: '';
     position: absolute;
     top: 1em;
     right: -.7em;
     width: 0;
     height: 0;
     border: 1em solid transparent;
-	border-right-width: 1em;
-	border-left-color: transparent;
+    border-right-width: 1em;
+    border-left-color: transparent;
     border-left-color: #fb3;
     border-right-width: 0;
 }
@@ -404,9 +390,9 @@ img {
     margin: .6em;
     background: #fb3;
     background-clip: border-box;
-    box-shadow: .1em .1em .3em rgba(0,0,0,.5);
-    -webkit-filter: drop-shadow(.1em .1em .1em rgba(0,0,0,.5));
-    filter: drop-shadow(.1em .1em .1em rgba(0,0,0,.5));
+    box-shadow: .1em .1em .3em rgba(0, 0, 0, .5);
+    -webkit-filter: drop-shadow(.1em .1em .1em rgba(0, 0, 0, .5));
+    filter: drop-shadow(.1em .1em .1em rgba(0, 0, 0, .5));
     font: 200%/1.6 Baskerville, Palatino, serif;
     text-align: center;
     background-clip: padding-box;
@@ -414,25 +400,23 @@ img {
 }
 
 .filter-shadow img {
-	transition: 0.5s filter;
-	filter: sepia(1) saturate(4) hue-rotate(295deg);
-	
+    transition: 0.5s filter;
+    filter: sepia(1) saturate(4) hue-rotate(295deg);
 }
 
-.filter-shadow img:hover,.filter-shadow img:focus {
-	filter: none;
-	
+.filter-shadow img:hover,
+.filter-shadow img:focus {
+    filter: none;
 }
 
 .filter-shadow1 {
-	background: hsl(335, 100%, 50%);
+    background: hsl(335, 100%, 50%);
 }
 
 .filter-shadow1 img {
-	transition: 0.5s filter;
-	mix-blend-mode: luminosity;
-	
-	/*mix-blend-mode: normal;          //正常
+    transition: 0.5s filter;
+    mix-blend-mode: luminosity;
+    /*mix-blend-mode: normal;          //正常
 	mix-blend-mode: multiply;        //正片叠底
 	mix-blend-mode: screen;          //滤色
 	mix-blend-mode: overlay;         //叠加
@@ -452,10 +436,9 @@ img {
 	mix-blend-mode: initial;         //初始
 	mix-blend-mode: inherit;         //继承
 	mix-blend-mode: unset;           //复原*/
-	
 }
 
-.filter-shadow1 img:hover,.filter-shadow img:focus {
-	filter: none;
-	
+.filter-shadow1 img:hover,
+.filter-shadow img:focus {
+    filter: none;
 }
