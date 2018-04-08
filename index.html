@@ -142,15 +142,40 @@
 
 	<h2>毛玻璃效果</h2>
 	<section>
-		<div>
-
+		<div class="wool-glass">
+			<div>
+				<span>哈哈，这是毛玻璃效果</span>
+			</div>
 		</div>
 	</section>
 
 	<h2>折角效果</h2>
 	<section>
-		<div class="">
+		<div class="angle"></div>
+		<div class="anglep angle1"></div>
+		<div class="anglep angle2"></div>
+		<div class="anglep angle3"></div>
+	</section>
+	
+	<h2>文本行的斑马条纹</h2>
+	<section>
+		<div class="text-stripe">
+			<pre>
+				<code>
+functionfilter(arr, exec) {
+    var res = arr.reduce((res, item, index) =&gt; {
+        if (exec(item, index)) {
+            res.push(item)
+        }
+        return res
+    }, [])
+    return res
+}
 
+[1, 2, 3].filter((item, index) =&gt; index &lt; 2) // [1, 2]
+filter([1, 2, 3], (item, index) =&gt; index &lt; 2) // [1, 2]
+				</code>
+			</pre>
 		</div>
 	</section>
 </body>
